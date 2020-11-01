@@ -5,6 +5,11 @@
     <classes>
       <class name="br.ce.wcaquino.appium.FormularioTeste">
         <methods>
+          <include name="inicializarAppium"/>
+          <include name="devePreencherCampoTexto"/>
+          <include name="preencherFormularioDesafio"/>
+          <include name="finalizar"/>
+          <include name="deveInteragirSwitchCheckBox"/>
           <include name="deveResolverDesafio"/>
         </methods>
       </class> <!-- br.ce.wcaquino.appium.FormularioTeste -->
