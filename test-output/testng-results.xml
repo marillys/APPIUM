@@ -1,73 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="133531" started-at="2020-11-01T16:04:36 BRT" finished-at="2020-11-01T16:06:50 BRT">
+  <suite name="Default suite" duration-ms="35554" started-at="2020-11-12T17:15:20 BRT" finished-at="2020-11-12T17:15:56 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="133531" started-at="2020-11-01T16:04:36 BRT" finished-at="2020-11-01T16:06:50 BRT">
-      <class name="br.ce.wcaquino.appium.FormularioTeste">
-        <test-method status="PASS" signature="inicializarAppium()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="inicializarAppium" is-config="true" duration-ms="22479" started-at="2020-11-01T16:04:36 BRT" finished-at="2020-11-01T16:04:58 BRT">
+    <test name="Default test" duration-ms="35554" started-at="2020-11-12T17:15:20 BRT" finished-at="2020-11-12T17:15:56 BRT">
+      <class name="br.ce.wcaquino.appium.test.FormularioTeste">
+        <test-method status="PASS" signature="inicializarAppium()[pri:0, instance:br.ce.wcaquino.appium.test.FormularioTeste@57e1b0c]" name="inicializarAppium" is-config="true" duration-ms="23695" started-at="2020-11-12T17:15:20 BRT" finished-at="2020-11-12T17:15:44 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inicializarAppium -->
-        <test-method status="PASS" signature="deveInteragirCombo()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="deveInteragirCombo" duration-ms="2851" started-at="2020-11-01T16:04:58 BRT" finished-at="2020-11-01T16:05:01 BRT">
+        <test-method status="PASS" signature="deveRealizarCadastroDemorado()[pri:0, instance:br.ce.wcaquino.appium.test.FormularioTeste@57e1b0c]" name="deveRealizarCadastroDemorado" duration-ms="5872" started-at="2020-11-12T17:15:44 BRT" finished-at="2020-11-12T17:15:50 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deveInteragirCombo -->
-        <test-method status="PASS" signature="finalizar()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="finalizar" is-config="true" duration-ms="790" started-at="2020-11-01T16:05:01 BRT" finished-at="2020-11-01T16:05:02 BRT">
+        </test-method> <!-- deveRealizarCadastroDemorado -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.FormularioTeste@57e1b0c]" name="tearDown" is-config="true" duration-ms="5155" started-at="2020-11-12T17:15:50 BRT" finished-at="2020-11-12T17:15:55 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- finalizar -->
-        <test-method status="PASS" signature="inicializarAppium()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="inicializarAppium" is-config="true" duration-ms="22007" started-at="2020-11-01T16:05:02 BRT" finished-at="2020-11-01T16:05:24 BRT">
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.FormularioTeste@57e1b0c]" name="finalizaClasse" is-config="true" duration-ms="804" started-at="2020-11-12T17:15:55 BRT" finished-at="2020-11-12T17:15:56 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inicializarAppium -->
-        <test-method status="PASS" signature="deveInteragirSwitchCheckBox()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="deveInteragirSwitchCheckBox" duration-ms="2235" started-at="2020-11-01T16:05:24 BRT" finished-at="2020-11-01T16:05:26 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deveInteragirSwitchCheckBox -->
-        <test-method status="PASS" signature="finalizar()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="finalizar" is-config="true" duration-ms="841" started-at="2020-11-01T16:05:26 BRT" finished-at="2020-11-01T16:05:27 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalizar -->
-        <test-method status="PASS" signature="inicializarAppium()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="inicializarAppium" is-config="true" duration-ms="21964" started-at="2020-11-01T16:05:27 BRT" finished-at="2020-11-01T16:05:49 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inicializarAppium -->
-        <test-method status="PASS" signature="devePreencherCampoTexto()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="devePreencherCampoTexto" duration-ms="1967" started-at="2020-11-01T16:05:49 BRT" finished-at="2020-11-01T16:05:51 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- devePreencherCampoTexto -->
-        <test-method status="PASS" signature="finalizar()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="finalizar" is-config="true" duration-ms="924" started-at="2020-11-01T16:05:51 BRT" finished-at="2020-11-01T16:05:52 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalizar -->
-        <test-method status="PASS" signature="inicializarAppium()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="inicializarAppium" is-config="true" duration-ms="22181" started-at="2020-11-01T16:05:52 BRT" finished-at="2020-11-01T16:06:14 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inicializarAppium -->
-        <test-method status="PASS" signature="deveRealizarCadastro()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="deveRealizarCadastro" duration-ms="6097" started-at="2020-11-01T16:06:14 BRT" finished-at="2020-11-01T16:06:20 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deveRealizarCadastro -->
-        <test-method status="PASS" signature="finalizar()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="finalizar" is-config="true" duration-ms="830" started-at="2020-11-01T16:06:20 BRT" finished-at="2020-11-01T16:06:21 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalizar -->
-        <test-method status="PASS" signature="inicializarAppium()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="inicializarAppium" is-config="true" duration-ms="22048" started-at="2020-11-01T16:06:21 BRT" finished-at="2020-11-01T16:06:43 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inicializarAppium -->
-        <test-method status="PASS" signature="preencherFormularioDesafio()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="preencherFormularioDesafio" duration-ms="5462" started-at="2020-11-01T16:06:43 BRT" finished-at="2020-11-01T16:06:49 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preencherFormularioDesafio -->
-        <test-method status="PASS" signature="finalizar()[pri:0, instance:br.ce.wcaquino.appium.FormularioTeste@3712b94]" name="finalizar" is-config="true" duration-ms="817" started-at="2020-11-01T16:06:49 BRT" finished-at="2020-11-01T16:06:50 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalizar -->
-      </class> <!-- br.ce.wcaquino.appium.FormularioTeste -->
+        </test-method> <!-- finalizaClasse -->
+      </class> <!-- br.ce.wcaquino.appium.test.FormularioTeste -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
