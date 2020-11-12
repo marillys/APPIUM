@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35554" started-at="2020-11-12T17:15:20 BRT" finished-at="2020-11-12T17:15:56 BRT">
+  <suite name="Default suite" duration-ms="37166" started-at="2020-11-12T18:19:25 BRT" finished-at="2020-11-12T18:20:02 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35554" started-at="2020-11-12T17:15:20 BRT" finished-at="2020-11-12T17:15:56 BRT">
-      <class name="br.ce.wcaquino.appium.test.FormularioTeste">
-        <test-method status="PASS" signature="inicializarAppium()[pri:0, instance:br.ce.wcaquino.appium.test.FormularioTeste@57e1b0c]" name="inicializarAppium" is-config="true" duration-ms="23695" started-at="2020-11-12T17:15:20 BRT" finished-at="2020-11-12T17:15:44 BRT">
+    <test name="Default test" duration-ms="37166" started-at="2020-11-12T18:19:25 BRT" finished-at="2020-11-12T18:20:02 BRT">
+      <class name="br.ce.wcaquino.appium.test.SplashTest">
+        <test-method status="PASS" signature="deveAguardarSplashSumir()[pri:0, instance:br.ce.wcaquino.appium.test.SplashTest@6ee52dcd]" name="deveAguardarSplashSumir" duration-ms="31388" started-at="2020-11-12T18:19:25 BRT" finished-at="2020-11-12T18:19:57 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inicializarAppium -->
-        <test-method status="PASS" signature="deveRealizarCadastroDemorado()[pri:0, instance:br.ce.wcaquino.appium.test.FormularioTeste@57e1b0c]" name="deveRealizarCadastroDemorado" duration-ms="5872" started-at="2020-11-12T17:15:44 BRT" finished-at="2020-11-12T17:15:50 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deveRealizarCadastroDemorado -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.FormularioTeste@57e1b0c]" name="tearDown" is-config="true" duration-ms="5155" started-at="2020-11-12T17:15:50 BRT" finished-at="2020-11-12T17:15:55 BRT">
+        </test-method> <!-- deveAguardarSplashSumir -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.SplashTest@6ee52dcd]" name="tearDown" is-config="true" duration-ms="4947" started-at="2020-11-12T18:19:57 BRT" finished-at="2020-11-12T18:20:02 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.FormularioTeste@57e1b0c]" name="finalizaClasse" is-config="true" duration-ms="804" started-at="2020-11-12T17:15:55 BRT" finished-at="2020-11-12T17:15:56 BRT">
+        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.SplashTest@6ee52dcd]" name="finalizaClasse" is-config="true" duration-ms="803" started-at="2020-11-12T18:20:02 BRT" finished-at="2020-11-12T18:20:02 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaClasse -->
-      </class> <!-- br.ce.wcaquino.appium.test.FormularioTeste -->
+      </class> <!-- br.ce.wcaquino.appium.test.SplashTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

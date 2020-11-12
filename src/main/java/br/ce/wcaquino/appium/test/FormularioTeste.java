@@ -20,12 +20,12 @@ import br.ce.wcaquino.appium.page.MenuPage;
 
 public class FormularioTeste extends BaseTest {
 
-	private MenuPage menuPage = new MenuPage();
+	private MenuPage menu = new MenuPage();
 	private FormularioPage formulario = new FormularioPage();
 
 	@BeforeMethod
 	private void inicializarAppium() throws MalformedURLException {
-		menuPage.acessarFormulario();
+		menu.acessarFormulario();
 	}
 
 	@Test
