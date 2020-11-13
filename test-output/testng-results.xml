@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37166" started-at="2020-11-12T18:19:25 BRT" finished-at="2020-11-12T18:20:02 BRT">
+  <suite name="Default suite" duration-ms="34057" started-at="2020-11-13T11:51:13 BRT" finished-at="2020-11-13T11:51:47 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37166" started-at="2020-11-12T18:19:25 BRT" finished-at="2020-11-12T18:20:02 BRT">
-      <class name="br.ce.wcaquino.appium.test.SplashTest">
-        <test-method status="PASS" signature="deveAguardarSplashSumir()[pri:0, instance:br.ce.wcaquino.appium.test.SplashTest@6ee52dcd]" name="deveAguardarSplashSumir" duration-ms="31388" started-at="2020-11-12T18:19:25 BRT" finished-at="2020-11-12T18:19:57 BRT">
+    <test name="Default test" duration-ms="34057" started-at="2020-11-13T11:51:13 BRT" finished-at="2020-11-13T11:51:47 BRT">
+      <class name="br.ce.wcaquino.appium.test.AlertTeste">
+        <test-method status="PASS" signature="deveConfirmarAlerta()[pri:0, instance:br.ce.wcaquino.appium.test.AlertTeste@646d64ab]" name="deveConfirmarAlerta" duration-ms="28257" started-at="2020-11-13T11:51:13 BRT" finished-at="2020-11-13T11:51:41 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deveAguardarSplashSumir -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.SplashTest@6ee52dcd]" name="tearDown" is-config="true" duration-ms="4947" started-at="2020-11-12T18:19:57 BRT" finished-at="2020-11-12T18:20:02 BRT">
+        </test-method> <!-- deveConfirmarAlerta -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.AlertTeste@646d64ab]" name="tearDown" is-config="true" duration-ms="4928" started-at="2020-11-13T11:51:41 BRT" finished-at="2020-11-13T11:51:46 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.SplashTest@6ee52dcd]" name="finalizaClasse" is-config="true" duration-ms="803" started-at="2020-11-12T18:20:02 BRT" finished-at="2020-11-12T18:20:02 BRT">
+        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.AlertTeste@646d64ab]" name="finalizaClasse" is-config="true" duration-ms="839" started-at="2020-11-13T11:51:46 BRT" finished-at="2020-11-13T11:51:47 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaClasse -->
-      </class> <!-- br.ce.wcaquino.appium.test.SplashTest -->
+      </class> <!-- br.ce.wcaquino.appium.test.AlertTeste -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
