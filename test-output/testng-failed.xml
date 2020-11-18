@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="br.ce.wcaquino.appium.test.SplashTest">
+      <class name="br.ce.wcaquino.appium.test.AccordionTest">
         <methods>
           <include name="tearDown"/>
           <include name="finalizaClasse"/>
-          <include name="deveAguardarSplashSumir"/>
+          <include name="deveInteragirComAccordion"/>
         </methods>
-      </class> <!-- br.ce.wcaquino.appium.test.SplashTest -->
+      </class> <!-- br.ce.wcaquino.appium.test.AccordionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

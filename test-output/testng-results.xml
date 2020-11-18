@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34057" started-at="2020-11-13T11:51:13 BRT" finished-at="2020-11-13T11:51:47 BRT">
+  <suite name="Default suite" duration-ms="30723" started-at="2020-11-18T19:53:12 BRT" finished-at="2020-11-18T19:53:42 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34057" started-at="2020-11-13T11:51:13 BRT" finished-at="2020-11-13T11:51:47 BRT">
-      <class name="br.ce.wcaquino.appium.test.AlertTeste">
-        <test-method status="PASS" signature="deveConfirmarAlerta()[pri:0, instance:br.ce.wcaquino.appium.test.AlertTeste@646d64ab]" name="deveConfirmarAlerta" duration-ms="28257" started-at="2020-11-13T11:51:13 BRT" finished-at="2020-11-13T11:51:41 BRT">
+    <test name="Default test" duration-ms="30723" started-at="2020-11-18T19:53:12 BRT" finished-at="2020-11-18T19:53:42 BRT">
+      <class name="br.ce.wcaquino.appium.test.AccordionTest">
+        <test-method status="PASS" signature="deveInteragirComAccordion()[pri:0, instance:br.ce.wcaquino.appium.test.AccordionTest@536aaa8d]" name="deveInteragirComAccordion" duration-ms="24866" started-at="2020-11-18T19:53:12 BRT" finished-at="2020-11-18T19:53:36 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deveConfirmarAlerta -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.AlertTeste@646d64ab]" name="tearDown" is-config="true" duration-ms="4928" started-at="2020-11-13T11:51:41 BRT" finished-at="2020-11-13T11:51:46 BRT">
+        </test-method> <!-- deveInteragirComAccordion -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.AccordionTest@536aaa8d]" name="tearDown" is-config="true" duration-ms="4997" started-at="2020-11-18T19:53:36 BRT" finished-at="2020-11-18T19:53:41 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.AlertTeste@646d64ab]" name="finalizaClasse" is-config="true" duration-ms="839" started-at="2020-11-13T11:51:46 BRT" finished-at="2020-11-13T11:51:47 BRT">
+        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.AccordionTest@536aaa8d]" name="finalizaClasse" is-config="true" duration-ms="831" started-at="2020-11-18T19:53:41 BRT" finished-at="2020-11-18T19:53:42 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaClasse -->
-      </class> <!-- br.ce.wcaquino.appium.test.AlertTeste -->
+      </class> <!-- br.ce.wcaquino.appium.test.AccordionTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
