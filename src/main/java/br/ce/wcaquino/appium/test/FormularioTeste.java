@@ -17,6 +17,7 @@ import br.ce.wcaquino.appium.core.BaseTest;
 import br.ce.wcaquino.appium.core.DriverFactory;
 import br.ce.wcaquino.appium.page.FormularioPage;
 import br.ce.wcaquino.appium.page.MenuPage;
+import io.appium.java_client.MobileBy;
 
 public class FormularioTeste extends BaseTest {
 
@@ -120,5 +121,36 @@ public class FormularioTeste extends BaseTest {
 		// verificações
 		String nomeObtido = formulario.obterNomeCadastrado();
 		assertEquals(nomeObtido, "Nome: " + nome);
+	}
+	
+	@Test
+	public void deveAlterarData() 
+	{
+		formulario.clicarPorTexto("01/01/2000");
+		formulario.clicarPorTexto("20");
+		formulario.clicarPorTexto("OK");
+		
+		assertTrue(formulario.existeElementoPorTexto("20/2/2000"));
+	}
+	
+	@Test
+	public void deveAlterarHora()
+	{
+		formulario.clicarPorTexto("06:00");
+		formulario.clicar(MobileBy.AccessibilityId("5"));
+		formulario.clicar(MobileBy.AccessibilityId("35"));
+		formulario.clicarPorTexto("OK");
+		
+		assertTrue(formulario.existeElementoPorTexto("5:35"));
+	}
+	
+	@Test
+	public void deveInteragirComSeekbar() 
+	{
+		formulario.clicarSeekBar(0.56);
+		formulario.salvar();
+		
+		assertEquals(formulario.obterSlider(), "Slider: 56");
+		
 	}
 }

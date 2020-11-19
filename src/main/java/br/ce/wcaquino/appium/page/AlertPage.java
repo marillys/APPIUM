@@ -10,6 +10,11 @@ public class AlertPage extends BasePage{
 	{
 		clicarPorTexto("ALERTA CONFIRM");
 	}
+	
+	public void clicarAlertaSimples() 
+	{
+		clicarPorTexto("ALERTA SIMPLES");
+	}
 
 	public String obterTituloAlerta() 
 	{
@@ -29,5 +34,11 @@ public class AlertPage extends BasePage{
 	public void sair() 
 	{
 		clicarPorTexto("SAIR");
+	}
+	
+	public void clicarForaCaixa() 
+	{
+		
+		tap(100, 150);
 	}
 }
