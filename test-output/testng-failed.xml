@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="br.ce.wcaquino.appium.test.CliquesTeste">
+      <class name="br.ce.wcaquino.appium.test.OpcaoEscondidaTest">
         <methods>
+          <include name="deveEncontrarOpcaoEscondida"/>
           <include name="tearDown"/>
           <include name="finalizaClasse"/>
-          <include name="deveClicarLongo"/>
         </methods>
-      </class> <!-- br.ce.wcaquino.appium.test.CliquesTeste -->
+      </class> <!-- br.ce.wcaquino.appium.test.OpcaoEscondidaTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
