@@ -11,17 +11,10 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 
-import org.openqa.selenium.interactions.touch.TouchActions;
-
 public class CliquesPage extends BasePage {
 	
 	public void cliqueLongo() 
-	{
-		
-		/*TouchActions action = new TouchActions(DriverFactory.getDriver());
-		action.longPress(DriverFactory.getDriver().findElement(By.xpath("//*[@text='Clique Longo']")));
-		action.release().perform();*/
-		
+	{		
 		MobileElement origem = DriverFactory.getDriver().findElement(By.xpath("//*[@text='Clique Longo']"));
 		MobileElement destino = DriverFactory.getDriver().findElement(By.xpath("(//android.widget.TextView)[3]"));
 		

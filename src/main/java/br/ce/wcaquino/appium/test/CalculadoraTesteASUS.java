@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
 
 public class CalculadoraTesteASUS {
 

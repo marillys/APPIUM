@@ -36,30 +36,6 @@ public class CalculadoraTeste {
 	    Assert.assertEquals("6", el7.getText());
 	    
 	    driver.quit();
-		/*
-
-public class SampleTest {
-
-  private AndroidDriver driver;
-
-  @Before
-  public void setUp() throws MalformedURLException {
-
-    URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
-
-    driver = new AndroidDriver(remoteUrl, desiredCapabilities);
-  }
-
-  @Test
-  public void sampleTest() {
-    
-  }
-
-  @After
-  public void tearDown() {
-    driver.quit();
-  }
-}*/
 	}
 	
 }

@@ -2,7 +2,6 @@ package br.ce.wcaquino.appium.core;
 
 import static br.ce.wcaquino.appium.core.DriverFactory.getDriver;
 
-import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -11,7 +10,6 @@ import org.openqa.selenium.Dimension;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
-import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
 public class BasePage {
@@ -49,16 +47,14 @@ public class BasePage {
 		return elementos.size() > 0;
 	}
 
-	public String obterTituloAlerta() 
-	{
+	public String obterTituloAlerta() {
 		return obterTexto(By.id("android:id/alertTitle"));
 	}
-	
-	public String obterMensagemAlerta() 
-	{
+
+	public String obterMensagemAlerta() {
 		return obterTexto(By.id("android:id/message"));
 	}
-	
+
 	public void tap(int x, int y) {
 		new TouchAction(getDriver()).tap(PointOption.point(x, y)).perform();
 	}
@@ -80,14 +76,50 @@ public class BasePage {
 	public void scrollByText(String menuText) {
 
 		try {
-			DriverFactory.getDriver().findElement(
-					MobileBy.AndroidUIAutomator(
-							"new UiScrollable(new UiSelector().scrollable(true)"
-									+ ".instance(0)).scrollIntoView(new UiSelector()"
-									+ ".textMatches(\"" + menuText + "\").instance(0));"));
+			DriverFactory.getDriver()
+					.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)"
+							+ ".instance(0)).scrollIntoView(new UiSelector()" + ".textMatches(\"" + menuText
+							+ "\").instance(0));"));
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void scrowDown() {
+		scroll(0.9, 0.1);
+	}
+
+	public void scrowUp() {
+		scroll(0.1, 0.9);
+	}
+
+	public void swipe(double inicio, double fim) {
+		Dimension size = getDriver().manage().window().getSize();
+
+		int start_x = (int) (size.width * inicio);
+		int end_x = (int) (size.width * fim);
+		int y = size.height / 2;
+
+		new TouchAction(DriverFactory.getDriver()).longPress(PointOption.point(start_x, y))
+				.moveTo(PointOption.point(end_x, y)).release().perform();
+	}
+
+	public void swipeLeft() {
+		swipe(0.1, 0.9);
+	}
+
+	public void swipeRight() {
+		swipe(0.9, 0.1);
+	}
+	
+	public void swipeElement(MobileElement element, double inicio, double fim) {
+
+		int start_x = (int) (element.getSize().width * inicio);
+		int end_x = (int) (element.getSize().width * fim);
+		int y = element.getLocation().y + (element.getSize().height / 2);
+
+		new TouchAction(DriverFactory.getDriver()).longPress(PointOption.point(start_x, y))
+				.moveTo(PointOption.point(end_x, y)).release().perform();
 	}
 }

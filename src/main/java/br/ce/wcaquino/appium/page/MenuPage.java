@@ -9,6 +9,11 @@ public class MenuPage extends BasePage{
 		clicarPorTexto("Formulário");
 	}
 	
+	public void acessarSeuBarrigaHibrido() 
+	{
+		clicarPorTexto("SeuBarriga Híbrido");
+	}
+	
 	public void acessarSplash()
 	{
 		clicarPorTexto("Splash");
@@ -32,5 +37,23 @@ public class MenuPage extends BasePage{
 	public void acessarCliques() 
 	{
 		clicarPorTexto("Cliques");
+	}
+	
+	public void acessarSwipe()
+	{
+		scrollByText("Swipe");
+		clicarPorTexto("Swipe");
+	}
+	
+	public void acessarSwipeList()
+	{
+		scrollByText("Swipe List");
+		clicarPorTexto("Swipe List");
+	}
+	
+	public void acessarDragNDrop() 
+	{
+		scrollByText("Drag and drop");
+		clicarPorTexto("Drag and drop");
 	}
 }
