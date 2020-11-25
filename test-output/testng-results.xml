@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50478" started-at="2020-11-23T19:58:22 BRT" finished-at="2020-11-23T19:59:12 BRT">
+  <suite name="Default suite" duration-ms="43479" started-at="2020-11-25T20:14:23 BRT" finished-at="2020-11-25T20:15:06 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50478" started-at="2020-11-23T19:58:22 BRT" finished-at="2020-11-23T19:59:12 BRT">
-      <class name="br.ce.wcaquino.appium.test.DragNDropTeste">
-        <test-method status="PASS" signature="deveEfetuarDragNDrop()[pri:0, instance:br.ce.wcaquino.appium.test.DragNDropTeste@528931cf]" name="deveEfetuarDragNDrop" duration-ms="44592" started-at="2020-11-23T19:58:22 BRT" finished-at="2020-11-23T19:59:06 BRT">
+    <test name="Default test" duration-ms="43479" started-at="2020-11-25T20:14:23 BRT" finished-at="2020-11-25T20:15:06 BRT">
+      <class name="br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest">
+        <test-method status="PASS" signature="deveFazerLogin()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest@4493d195]" name="deveFazerLogin" duration-ms="26217" started-at="2020-11-25T20:14:23 BRT" finished-at="2020-11-25T20:14:49 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deveEfetuarDragNDrop -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.DragNDropTeste@528931cf]" name="tearDown" is-config="true" duration-ms="5021" started-at="2020-11-23T19:59:06 BRT" finished-at="2020-11-23T19:59:11 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.DragNDropTeste@528931cf]" name="finalizaClasse" is-config="true" duration-ms="838" started-at="2020-11-23T19:59:11 BRT" finished-at="2020-11-23T19:59:12 BRT">
+        </test-method> <!-- deveFazerLogin -->
+        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest@4493d195]" name="finalizaClasse" is-config="true" duration-ms="509" started-at="2020-11-25T20:14:49 BRT" finished-at="2020-11-25T20:14:49 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaClasse -->
-      </class> <!-- br.ce.wcaquino.appium.test.DragNDropTeste -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest@4493d195]" name="tearDown" is-config="true" duration-ms="16708" started-at="2020-11-25T20:14:49 BRT" finished-at="2020-11-25T20:15:06 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
