@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest">
+      <class name="br.ce.wcaquino.appium.test.SeuBarrigaNativoTest">
         <methods>
-          <include name="finalizaClasse"/>
-          <include name="deveFazerLogin"/>
+          <include name="inserirConta"/>
           <include name="tearDown"/>
+          <include name="finalizaClasse"/>
+          <include name="deveRealizarLogin"/>
         </methods>
-      </class> <!-- br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest -->
+      </class> <!-- br.ce.wcaquino.appium.test.SeuBarrigaNativoTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,5 +1,7 @@
 package br.ce.wcaquino.appium.test;
 
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -19,8 +21,11 @@ public class SeuBarrigaHibridoTest extends BaseTest {
 		
 		page.entrarContextoWeb();
 		//esperar(5000);
-		page.setEmail("marilia.borges01@outlook.com");
+		page.setEmail("marilia@a");
 		page.setSenha("Marilia");
+		page.entrar();
+		
+		assertEquals(page.getMensagem(), "Bem vindo, Marilia!");
 	}
 	@AfterTest
 	public void tearDown() 

@@ -36,4 +36,14 @@ public class WebViewPage extends BasePage {
 	public void setSenha(String senha) {
 		DriverFactory.getDriver().findElement(By.xpath("//*[@id='senha']")).sendKeys(senha);
 	}
+	
+	public void entrar() 
+	{
+		clicar(By.xpath("//button[@type='submit']"));
+	}
+	
+	public String getMensagem() 
+	{
+		return obterTexto(By.xpath("//div[@class='alert alert-success']"));
+	}
 }

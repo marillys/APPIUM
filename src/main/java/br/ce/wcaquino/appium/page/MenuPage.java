@@ -9,6 +9,11 @@ public class MenuPage extends BasePage{
 		clicarPorTexto("Formulário");
 	}
 	
+	public void acessarSeuBarrigaNativo()
+	{
+		clicarPorTexto("SeuBarriga Nativo");
+	}
+	
 	public void acessarSeuBarrigaHibrido() 
 	{
 		clicarPorTexto("SeuBarriga Híbrido");

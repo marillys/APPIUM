@@ -2,6 +2,7 @@ package br.ce.wcaquino.appium.core;
 
 import static br.ce.wcaquino.appium.core.DriverFactory.getDriver;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -10,6 +11,8 @@ import org.openqa.selenium.Dimension;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 
 public class BasePage {
@@ -121,5 +124,22 @@ public class BasePage {
 
 		new TouchAction(DriverFactory.getDriver()).longPress(PointOption.point(start_x, y))
 				.moveTo(PointOption.point(end_x, y)).release().perform();
+	}
+	
+	public void cliqueLongo(By elemento1, By elemento2) 
+	{		
+		MobileElement origem = DriverFactory.getDriver().findElement(elemento1);
+		MobileElement destino = DriverFactory.getDriver().findElement(elemento2);
+		
+		LongPressOptions lpOptions = LongPressOptions.longPressOptions()
+				.withDuration(Duration.ofMillis(500))
+				.withElement(ElementOption.element(origem));
+		
+		new TouchAction<>(DriverFactory.getDriver())
+				.longPress(lpOptions)
+				.moveTo(ElementOption.element(destino))
+				.release()
+				.perform();
+		
 	}
 }

@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43479" started-at="2020-11-25T20:14:23 BRT" finished-at="2020-11-25T20:15:06 BRT">
+  <suite name="Default suite" duration-ms="39419" started-at="2020-11-26T18:37:20 BRT" finished-at="2020-11-26T18:37:59 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43479" started-at="2020-11-25T20:14:23 BRT" finished-at="2020-11-25T20:15:06 BRT">
-      <class name="br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest">
-        <test-method status="PASS" signature="deveFazerLogin()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest@4493d195]" name="deveFazerLogin" duration-ms="26217" started-at="2020-11-25T20:14:23 BRT" finished-at="2020-11-25T20:14:49 BRT">
+    <test name="Default test" duration-ms="39419" started-at="2020-11-26T18:37:20 BRT" finished-at="2020-11-26T18:37:59 BRT">
+      <class name="br.ce.wcaquino.appium.test.SeuBarrigaNativoTest">
+        <test-method status="PASS" signature="deveRealizarLogin()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@ea1a8d5]" name="deveRealizarLogin" is-config="true" duration-ms="29434" started-at="2020-11-26T18:37:20 BRT" finished-at="2020-11-26T18:37:49 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deveFazerLogin -->
-        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest@4493d195]" name="finalizaClasse" is-config="true" duration-ms="509" started-at="2020-11-25T20:14:49 BRT" finished-at="2020-11-25T20:14:49 BRT">
+        </test-method> <!-- deveRealizarLogin -->
+        <test-method status="PASS" signature="inserirContaComSucesso()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@ea1a8d5]" name="inserirContaComSucesso" duration-ms="3955" started-at="2020-11-26T18:37:49 BRT" finished-at="2020-11-26T18:37:53 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- finalizaClasse -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest@4493d195]" name="tearDown" is-config="true" duration-ms="16708" started-at="2020-11-25T20:14:49 BRT" finished-at="2020-11-25T20:15:06 BRT">
+        </test-method> <!-- inserirContaComSucesso -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@ea1a8d5]" name="tearDown" is-config="true" duration-ms="5159" started-at="2020-11-26T18:37:53 BRT" finished-at="2020-11-26T18:37:58 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- br.ce.wcaquino.appium.test.SeuBarrigaHibridoTest -->
+        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@ea1a8d5]" name="finalizaClasse" is-config="true" duration-ms="844" started-at="2020-11-26T18:37:58 BRT" finished-at="2020-11-26T18:37:59 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaClasse -->
+      </class> <!-- br.ce.wcaquino.appium.test.SeuBarrigaNativoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
