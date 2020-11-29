@@ -11,6 +11,11 @@ public class SeuBarrigaContasPage extends BasePage {
 		clicarPorTexto("SALVAR");
 	}
 	
+	public void clicarBotaoExcluir() 
+	{
+		clicarPorTexto("EXCLUIR");
+	}
+	
 	public void preencherConta(String nome) 
 	{		
 		escrever(By.className("android.widget.EditText"), nome);
@@ -21,9 +26,9 @@ public class SeuBarrigaContasPage extends BasePage {
 		return existeElementoPorTexto("Conta adicionada com sucesso");
 	}
 	
-	public void selecionarItemLista() 
+	public void selecionarItemLista(String conta) 
 	{
-		cliqueLongo(By.xpath("//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup"), 
-				By.xpath("//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup"));		
+		cliqueLongo(By.xpath("//*[@text='"+conta+"']"));	
+		//cliqueLongo(By.xpath("//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView)"));
 	}
 }

@@ -14,19 +14,8 @@ import io.appium.java_client.touch.offset.ElementOption;
 public class CliquesPage extends BasePage {
 	
 	public void cliqueLongo() 
-	{		
-		MobileElement origem = DriverFactory.getDriver().findElement(By.xpath("//*[@text='Clique Longo']"));
-		MobileElement destino = DriverFactory.getDriver().findElement(By.xpath("(//android.widget.TextView)[3]"));
-		
-		LongPressOptions lpOptions = LongPressOptions.longPressOptions()
-				.withDuration(Duration.ofMillis(500))
-				.withElement(ElementOption.element(origem));
-		
-		new TouchAction<>(DriverFactory.getDriver())
-				.longPress(lpOptions)
-				.moveTo(ElementOption.element(destino))
-				.release()
-				.perform();
+	{	
+		cliqueLongo(By.xpath("//*[@text='Clique Longo']"));
 		
 	}
 	

@@ -115,7 +115,7 @@ public class BasePage {
 	public void swipeRight() {
 		swipe(0.9, 0.1);
 	}
-	
+
 	public void swipeElement(MobileElement element, double inicio, double fim) {
 
 		int start_x = (int) (element.getSize().width * inicio);
@@ -125,21 +125,31 @@ public class BasePage {
 		new TouchAction(DriverFactory.getDriver()).longPress(PointOption.point(start_x, y))
 				.moveTo(PointOption.point(end_x, y)).release().perform();
 	}
-	
-	public void cliqueLongo(By elemento1, By elemento2) 
-	{		
+
+	public void cliqueLongo(By elemento1) {
 		MobileElement origem = DriverFactory.getDriver().findElement(elemento1);
-		MobileElement destino = DriverFactory.getDriver().findElement(elemento2);
 		
-		LongPressOptions lpOptions = LongPressOptions.longPressOptions()
-				.withDuration(Duration.ofMillis(500))
+		LongPressOptions lpOptions = LongPressOptions.longPressOptions().withDuration(Duration.ofMillis(500))
 				.withElement(ElementOption.element(origem));
-		
-		new TouchAction<>(DriverFactory.getDriver())
-				.longPress(lpOptions)
-				.moveTo(ElementOption.element(destino))
-				.release()
+
+		new TouchAction(DriverFactory.getDriver()).longPress(lpOptions)
+				// .moveTo(ElementOption.element(destino))
+				// .release()
 				.perform();
+
+	}
+
+	public void clicarLongoArrastar() {
 		
+		//Método não está 100%, pode passar por paramentro 2 by
+
+		MobileElement origem = DriverFactory.getDriver().findElement(By.xpath("//*[@text='Clique Longo']"));
+		MobileElement destino = DriverFactory.getDriver().findElement(By.xpath("(//android.widget.TextView)[3]"));
+
+		LongPressOptions lpOptions = LongPressOptions.longPressOptions().withDuration(Duration.ofMillis(500))
+				.withElement(ElementOption.element(origem));
+
+		new TouchAction<>(DriverFactory.getDriver()).longPress(lpOptions).moveTo(ElementOption.element(destino))
+				.release().perform();
 	}
 }

@@ -5,7 +5,7 @@
     <classes>
       <class name="br.ce.wcaquino.appium.test.SeuBarrigaNativoTest">
         <methods>
-          <include name="inserirConta"/>
+          <include name="validarInclusaoMovimentacao"/>
           <include name="tearDown"/>
           <include name="finalizaClasse"/>
           <include name="deveRealizarLogin"/>

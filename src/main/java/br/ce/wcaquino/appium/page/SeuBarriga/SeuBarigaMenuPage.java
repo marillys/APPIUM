@@ -15,4 +15,9 @@ public class SeuBarigaMenuPage extends BasePage {
 	{
 		clicarPorTexto("CONTAS");
 	}
+	
+	public void clicarAbaMov() 
+	{
+		clicarPorTexto("MOV...");
+	}
 }
