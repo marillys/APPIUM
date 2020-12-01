@@ -1,5 +1,6 @@
 package br.ce.wcaquino.appium.test;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
@@ -8,8 +9,10 @@ import org.testng.annotations.Test;
 
 import br.ce.wcaquino.appium.core.BaseTest;
 import br.ce.wcaquino.appium.page.MenuPage;
+import br.ce.wcaquino.appium.page.SeuBarriga.HomePage;
 import br.ce.wcaquino.appium.page.SeuBarriga.LoginPage;
-import br.ce.wcaquino.appium.page.SeuBarriga.Movimentacoes;
+import br.ce.wcaquino.appium.page.SeuBarriga.MovimentacoesPage;
+import br.ce.wcaquino.appium.page.SeuBarriga.ResumoPage;
 import br.ce.wcaquino.appium.page.SeuBarriga.SeuBarigaMenuPage;
 import br.ce.wcaquino.appium.page.SeuBarriga.SeuBarrigaContasPage;
 
@@ -19,7 +22,9 @@ public class SeuBarrigaNativoTest extends BaseTest {
 	LoginPage login = new LoginPage();
 	SeuBarigaMenuPage home = new SeuBarigaMenuPage();
 	SeuBarrigaContasPage contas = new SeuBarrigaContasPage();
-	Movimentacoes movimento = new Movimentacoes();
+	MovimentacoesPage movimento = new MovimentacoesPage();
+	ResumoPage resumo = new ResumoPage();
+	HomePage pageHome = new HomePage();
 	
 	@BeforeTest
 	public void deveRealizarLogin()
@@ -89,6 +94,30 @@ public class SeuBarrigaNativoTest extends BaseTest {
 		movimento.selecionarConta("Conta mesmo nome");
 		movimento.clicarBotaoSalvar();
 		assertTrue(movimento.existeElementoPorTexto("Movimentação cadastrada com sucesso"));
-		
 	}
+	
+	@Test
+	public void atualizarSaldoAoExcluirMovimentacao() 
+	{
+		//Verificar saldo
+		assertEquals(pageHome.obterSaldoConta("Conta para saldo"), "534.00");
+		
+		//ir para resumo
+		home.clicarAbaResumo();
+		resumo.clicarBotaoAtualizar();
+		
+		//excluir Movimentação 3
+		resumo.excluirElemento("Movimentacao 3");
+		
+		//validar a mensagem - "Movimentação removida com sucesso"
+		assertTrue(movimento.existeElementoPorTexto("Movimentação removida com sucesso!"));
+		
+		//voltar para Home
+		home.clicarAbaHome();
+		
+		//Atualiza saldo, puxando a página
+		
+		//Verificar o saldo
+	}
+	
 }

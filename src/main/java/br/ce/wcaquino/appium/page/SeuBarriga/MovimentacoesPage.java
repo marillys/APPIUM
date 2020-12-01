@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import br.ce.wcaquino.appium.core.BasePage;
 
-public class Movimentacoes extends BasePage {
+public class MovimentacoesPage extends BasePage {
 
 	public void clicarBotaoSalvar()
 	{
@@ -28,11 +28,9 @@ public class Movimentacoes extends BasePage {
 	
 	public void selecionarConta(String conta) 
 	{
-		clicarPorTexto("Selecione uma conta...");
+		/*clicarPorTexto("Selecione uma conta...");
 		
-		clicar(By.xpath("//android.widget.CheckedTextView[@text='"+conta+"']"));
-		/*"//android.widget.TextView[starts-with(@text, 'Checkbox:')]"
-				cliqueLongo(By.xpath("//*[@text='"+conta+"']"));	
-				android:id/select_dialog_listview*/
+		clicar(By.xpath("//android.widget.CheckedTextView[@text='"+conta+"']"));*/
+		selecionarCombo(By.xpath("//android.widget.Spinner[2]"), conta);
 	}
 }

@@ -20,4 +20,14 @@ public class SeuBarigaMenuPage extends BasePage {
 	{
 		clicarPorTexto("MOV...");
 	}
+	
+	public void clicarAbaResumo() 
+	{
+		clicarPorTexto("RESUMO");
+	}
+	
+	public void clicarAbaHome()
+	{
+		clicarPorTexto("HOME");
+	}
 }
