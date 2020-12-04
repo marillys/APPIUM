@@ -6,9 +6,11 @@
       <class name="br.ce.wcaquino.appium.test.SeuBarrigaNativoTest">
         <methods>
           <include name="validarInclusaoMovimentacao"/>
+          <include name="excluirConta"/>
           <include name="tearDown"/>
           <include name="finalizaClasse"/>
           <include name="deveRealizarLogin"/>
+          <include name="inserirContaComSucesso"/>
         </methods>
       </class> <!-- br.ce.wcaquino.appium.test.SeuBarrigaNativoTest -->
     </classes>

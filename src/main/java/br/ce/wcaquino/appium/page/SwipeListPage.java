@@ -26,7 +26,7 @@ public class SwipeListPage extends BasePage {
 		MobileElement botao = DriverFactory.getDriver().findElement(By.xpath("//*[@text='(+)']/.."));
 		
 		Point center = botao.getCenter();
-		new TouchAction(DriverFactory.getDriver())
+		new TouchAction<>(DriverFactory.getDriver())
 			.tap(PointOption.point(center.x - 50,center.y))
 			.perform();
 		

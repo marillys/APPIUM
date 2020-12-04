@@ -1,15 +1,9 @@
 package br.ce.wcaquino.appium.page;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 
 import br.ce.wcaquino.appium.core.BasePage;
 import br.ce.wcaquino.appium.core.DriverFactory;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.touch.LongPressOptions;
-import io.appium.java_client.touch.offset.ElementOption;
 
 public class CliquesPage extends BasePage {
 	

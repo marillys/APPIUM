@@ -1,9 +1,9 @@
 package br.ce.wcaquino.appium.test;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -26,7 +26,7 @@ public class SeuBarrigaNativoTest extends BaseTest {
 	ResumoPage resumo = new ResumoPage();
 	HomePage pageHome = new HomePage();
 	
-	@BeforeTest
+	@BeforeMethod
 	public void deveRealizarLogin()
 	{
 		menu.acessarSeuBarrigaNativo();
@@ -99,6 +99,9 @@ public class SeuBarrigaNativoTest extends BaseTest {
 	@Test
 	public void atualizarSaldoAoExcluirMovimentacao() 
 	{
+		pageHome.clicarBotaoReset();		
+		esperar(1000);
+		
 		//Verificar saldo
 		assertEquals(pageHome.obterSaldoConta("Conta para saldo"), "534.00");
 		
@@ -115,9 +118,13 @@ public class SeuBarrigaNativoTest extends BaseTest {
 		//voltar para Home
 		home.clicarAbaHome();
 		
+		esperar(1000);
+		
 		//Atualiza saldo, puxando a página
+		pageHome.atualizarPaginaSaldos();
 		
 		//Verificar o saldo
+		assertEquals(pageHome.obterSaldoConta("Conta para saldo"), "-1000.00");
 	}
 	
 }

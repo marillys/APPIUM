@@ -59,7 +59,7 @@ public class BasePage {
 	}
 
 	public void tap(int x, int y) {
-		new TouchAction(getDriver()).tap(PointOption.point(x, y)).perform();
+		new TouchAction<>(getDriver()).tap(PointOption.point(x, y)).perform();
 	}
 
 	public void scroll(double inicio, double fim) {
@@ -72,7 +72,7 @@ public class BasePage {
 		int start_y = (int) (size.height * inicio);
 		int end_y = (int) (size.height * fim);
 
-		new TouchAction(DriverFactory.getDriver()).longPress(PointOption.point(x, start_y))
+		new TouchAction<>(DriverFactory.getDriver()).longPress(PointOption.point(x, start_y))
 				.moveTo(PointOption.point(x, end_y)).release().perform();
 	}
 
@@ -104,7 +104,7 @@ public class BasePage {
 		int end_x = (int) (size.width * fim);
 		int y = size.height / 2;
 
-		new TouchAction(DriverFactory.getDriver()).longPress(PointOption.point(start_x, y))
+		new TouchAction<>(DriverFactory.getDriver()).longPress(PointOption.point(start_x, y))
 				.moveTo(PointOption.point(end_x, y)).release().perform();
 	}
 
@@ -122,7 +122,7 @@ public class BasePage {
 		int end_x = (int) (element.getSize().width * fim);
 		int y = element.getLocation().y + (element.getSize().height / 2);
 
-		new TouchAction(DriverFactory.getDriver()).longPress(PointOption.point(start_x, y))
+		new TouchAction<>(DriverFactory.getDriver()).longPress(PointOption.point(start_x, y))
 				.moveTo(PointOption.point(end_x, y)).release().perform();
 	}
 
@@ -132,7 +132,7 @@ public class BasePage {
 		LongPressOptions lpOptions = LongPressOptions.longPressOptions().withDuration(Duration.ofMillis(500))
 				.withElement(ElementOption.element(origem));
 
-		new TouchAction(DriverFactory.getDriver()).longPress(lpOptions)
+		new TouchAction<>(DriverFactory.getDriver()).longPress(lpOptions)
 				// .moveTo(ElementOption.element(destino))
 				// .release()
 				.perform();

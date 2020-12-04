@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 
 import br.ce.wcaquino.appium.core.BasePage;
 import br.ce.wcaquino.appium.core.DriverFactory;
+import io.appium.java_client.MobileElement;
 
 public class ResumoPage extends BasePage {
 	
@@ -12,9 +13,11 @@ public class ResumoPage extends BasePage {
 		clicarPorTexto("ATUALIZAR");
 	}
 	
-	public void excluirElemento(String opcao) 
+	public void excluirElemento(String desc) 
 	{
-		swipeElement(DriverFactory.getDriver().findElement(By.xpath("//android.widget.TextView[starts-with(@text, '"+opcao+"')]/../..")), 0.9, 0.5);
+		MobileElement elemento = DriverFactory.getDriver().findElement(By.xpath("//*[starts-with(@text, '"+desc+"')]/../.."));
+		
+		swipeElement(elemento, 0.9, 0.5);
 		clicarPorTexto("Del");
 	}
 }

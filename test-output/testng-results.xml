@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43279" started-at="2020-12-01T19:13:00 BRT" finished-at="2020-12-01T19:13:44 BRT">
+  <suite name="Default suite" duration-ms="100124" started-at="2020-12-04T18:34:53 BRT" finished-at="2020-12-04T18:36:33 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43279" started-at="2020-12-01T19:13:00 BRT" finished-at="2020-12-01T19:13:44 BRT">
+    <test name="Default test" duration-ms="100124" started-at="2020-12-04T18:34:53 BRT" finished-at="2020-12-04T18:36:33 BRT">
       <class name="br.ce.wcaquino.appium.test.SeuBarrigaNativoTest">
-        <test-method status="PASS" signature="deveRealizarLogin()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@ea1a8d5]" name="deveRealizarLogin" is-config="true" duration-ms="30038" started-at="2020-12-01T19:13:00 BRT" finished-at="2020-12-01T19:13:30 BRT">
+        <test-method status="PASS" signature="deveRealizarLogin()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="deveRealizarLogin" is-config="true" duration-ms="28740" started-at="2020-12-04T18:34:53 BRT" finished-at="2020-12-04T18:35:21 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deveRealizarLogin -->
-        <test-method status="PASS" signature="atualizarSaldoAoExcluirMovimentacao()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@ea1a8d5]" name="atualizarSaldoAoExcluirMovimentacao" duration-ms="6474" started-at="2020-12-01T19:13:30 BRT" finished-at="2020-12-01T19:13:37 BRT">
+        <test-method status="PASS" signature="atualizarSaldoAoExcluirMovimentacao()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="atualizarSaldoAoExcluirMovimentacao" duration-ms="12186" started-at="2020-12-04T18:35:21 BRT" finished-at="2020-12-04T18:35:34 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- atualizarSaldoAoExcluirMovimentacao -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@ea1a8d5]" name="tearDown" is-config="true" duration-ms="5852" started-at="2020-12-01T19:13:37 BRT" finished-at="2020-12-01T19:13:43 BRT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="tearDown" is-config="true" duration-ms="5639" started-at="2020-12-04T18:35:34 BRT" finished-at="2020-12-04T18:35:39 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@ea1a8d5]" name="finalizaClasse" is-config="true" duration-ms="872" started-at="2020-12-01T19:13:43 BRT" finished-at="2020-12-01T19:13:44 BRT">
+        <test-method status="PASS" signature="deveRealizarLogin()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="deveRealizarLogin" is-config="true" duration-ms="6296" started-at="2020-12-04T18:35:39 BRT" finished-at="2020-12-04T18:35:46 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveRealizarLogin -->
+        <test-method status="PASS" signature="excluirConta()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="excluirConta" duration-ms="2704" started-at="2020-12-04T18:35:46 BRT" finished-at="2020-12-04T18:35:48 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConta -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="tearDown" is-config="true" duration-ms="5457" started-at="2020-12-04T18:35:48 BRT" finished-at="2020-12-04T18:35:54 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="deveRealizarLogin()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="deveRealizarLogin" is-config="true" duration-ms="6226" started-at="2020-12-04T18:35:54 BRT" finished-at="2020-12-04T18:36:00 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveRealizarLogin -->
+        <test-method status="PASS" signature="inserirContaComSucesso()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="inserirContaComSucesso" duration-ms="4031" started-at="2020-12-04T18:36:00 BRT" finished-at="2020-12-04T18:36:04 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inserirContaComSucesso -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="tearDown" is-config="true" duration-ms="5752" started-at="2020-12-04T18:36:04 BRT" finished-at="2020-12-04T18:36:10 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="deveRealizarLogin()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="deveRealizarLogin" is-config="true" duration-ms="6296" started-at="2020-12-04T18:36:10 BRT" finished-at="2020-12-04T18:36:16 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveRealizarLogin -->
+        <test-method status="PASS" signature="validarInclusaoMovimentacao()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="validarInclusaoMovimentacao" duration-ms="9784" started-at="2020-12-04T18:36:16 BRT" finished-at="2020-12-04T18:36:26 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validarInclusaoMovimentacao -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="tearDown" is-config="true" duration-ms="6090" started-at="2020-12-04T18:36:26 BRT" finished-at="2020-12-04T18:36:32 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="finalizaClasse()[pri:0, instance:br.ce.wcaquino.appium.test.SeuBarrigaNativoTest@5faeada1]" name="finalizaClasse" is-config="true" duration-ms="882" started-at="2020-12-04T18:36:32 BRT" finished-at="2020-12-04T18:36:33 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaClasse -->
